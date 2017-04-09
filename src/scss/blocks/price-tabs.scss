@@ -1,0 +1,24 @@
+.price-tabs	{
+	#norway#yakutia, #alyaska, #island, #murmansk {position: fixed; }
+
+
+	a { line-height: 28px; background: #fff; text-decoration: none; }
+
+	#norway,#yakutia, #alyaska, #island, #murmansk, &__content,
+	#norway:target ~ &__content:nth-of-type(1),
+	#yakutia:target ~ &__content:nth-of-type(1),
+	#alyaska:target ~ &__content:nth-of-type(1),
+	#island:target ~ &__content:nth-of-type(1),
+	#murmansk:target ~ &__content:nth-of-type(1) {display: none; }
+
+	&__content:nth-of-type(1),
+	#norway:target ~ &__content:nth-of-type(2),
+	#yakutia:target ~ &__content:nth-of-type(3),
+	#alyaska:target ~ &__content:nth-of-type(4),
+	#island:target ~ &__content:nth-of-type(5),
+	#murmansk:target ~ &__content:nth-of-type(6) { display: block; }
+
+	// a:nth-of-type(1),
+	// #yakutia:target ~ a:nth-of-type(2),
+	// #alyaska:target ~ a:nth-of-type(3) { border-bottom: 2px solid #fff; }
+}
