@@ -76,10 +76,20 @@
         <section class="facts" id="facts">
             <div class="facts__inner">
                 <div class="facts__info facts__info--line">
-                  <h2 class="facts__title">Факты о северном сиянии</h2>
-                  <p class="facts__item">Lorem ipsum dolor sit amet.</p>
-                  <p class="facts__item">Excepturi, quidem! Eum corporis, quibusdam!</p>
-                  <p class="facts__item">Amet, nostrum facilis dolor neque.</p>
+                    <h2 class="facts__title">Факты о северном сиянии</h2>
+                    <div class="facts__item">
+                        <span>01</span>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    }
+                    </div>
+                    <div class="facts__item">
+                        <span>02</span>
+                        <p>Excepturi, quidem! Eum corporis, quibusdam!</p>
+                    </div>
+                    <div class="facts__item">
+                        <span>03</span>
+                        <p>Amet, nostrum facilis dolor neque.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -103,13 +113,17 @@
                 <h2>Отзывы</h2>
                 <div class="slider">
                     <div class="slider__item">
-                        <img src="" alt="photo" class="review__photo">
-                        <span class="review_autor">Игорь, о Финляндии</span>
+                        <div class="review__profile">
+                            <img src="" alt="photo" class="review__photo">
+                            <span class="review_autor">Игорь, о Финляндии</span>
+                        </div>
                         <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ducimus reiciendis quaerat architecto. Molestias, enim.</p>
                     </div>
                     <div class="slider__item">
-                        <img src="" alt="photo" class="review__photo">
-                        <span class="review_autor">Ярослав, о Якутии</span>
+                        <div class="review__profile">
+                            <img src="" alt="photo" class="review__photo">
+                            <span class="review_autor">Ярослав, о Якутии</span>
+                        </div>
                         <p class="slider__text">Minus debitis sed reprehenderit culpa assumenda, inventore, consequuntur sint obcaecati, amet recusandae nesciunt? Quam, qui.</p>
                     </div>
                 </div>
@@ -127,47 +141,47 @@
             <div class="contacts__inner">
                 <h2 class="contacts__title">Контакты</h2>
                 <div class="contacts__row">
-                    <div class="contacts__item">
-                        <h3 class="contacts__region">Финляндия</h3>
-                        <p class="contacts__person">Менеджер направления:<br>Артем Ливанов</p>
-                        <a href="tel:+7812676700" class="contacts__tel">+7 (812) 67-67-00</a>
-                        <a href="https://vk.com/muravei35" class="contacts__vk">vk.com/muravei35</a>
+                    <div class="manager">
+                        <h3 class="manager__region">Финляндия</h3>
+                        <p class="manager__person">Менеджер направления:<br>Артем Ливанов</p>
+                        <a href="tel:+7812676700" class="manager__tel">+7 (812) 67-67-00</a>
+                        <a href="https://vk.com/muravei35" class="manager__vk">vk.com/muravei35</a>
                         <a href="mailto:example@mail.com">example@mail.com</a>
                     </div>
-                    <div class="contacts__item">
-                        <h3 class="contacts__region">Норвегия</h3>
-                        <p class="contacts__person">Менеджер направления:<br>Артем Ливанов</p>
-                        <a href="tel:+7812676700" class="contacts__link">+7 (812) 67-67-00</a>
-                        <a href="https://vk.com/muravei35" class="contacts__link">vk.com/muravei35</a>
-                        <a href="mailto:example@mail.com" class="contacts__link">example@mail.com</a>
+                    <div class="manager">
+                        <h3 class="manager__region">Норвегия</h3>
+                        <p class="manager__person">Менеджер направления:<br>Артем Ливанов</p>
+                        <a href="tel:+7812676700" class="manager__link">+7 (812) 67-67-00</a>
+                        <a href="https://vk.com/muravei35" class="manager__link">vk.com/muravei35</a>
+                        <a href="mailto:example@mail.com" class="manager__link">example@mail.com</a>
                     </div>
-                    <div class="contacts__item">
-                        <h3 class="contacts__region">Якутия</h3>
-                        <p class="contacts__person">Менеджер направления:<br>Артем Ливанов</p>
-                        <a href="tel:+7812676700" class="contacts__link">+7 (812) 67-67-00</a>
-                        <a href="https://vk.com/muravei35" class="contacts__link">vk.com/muravei35</a>
-                        <a href="mailto:example@mail.com" class="contacts__link">example@mail.com</a>
+                    <div class="manager">
+                        <h3 class="manager__region">Якутия</h3>
+                        <p class="manager__person">Менеджер направления:<br>Артем Ливанов</p>
+                        <a href="tel:+7812676700" class="manager__link">+7 (812) 67-67-00</a>
+                        <a href="https://vk.com/muravei35" class="manager__link">vk.com/muravei35</a>
+                        <a href="mailto:example@mail.com" class="manager__link">example@mail.com</a>
                     </div>
-                    <div class="contacts__item">
-                        <h3 class="contacts__region">Аляска</h3>
-                        <p class="contacts__person">Менеджер направления:<br>Артем Ливанов</p>
-                        <a href="tel:+7812676700" class="contacts__link">+7 (812) 67-67-00</a>
-                        <a href="https://vk.com/muravei35" class="contacts__link">vk.com/muravei35</a>
-                        <a href="mailto:example@mail.com" class="contacts__link">example@mail.com</a>
+                    <div class="manager">
+                        <h3 class="manager__region">Аляска</h3>
+                        <p class="manager__person">Менеджер направления:<br>Артем Ливанов</p>
+                        <a href="tel:+7812676700" class="manager__link">+7 (812) 67-67-00</a>
+                        <a href="https://vk.com/muravei35" class="manager__link">vk.com/muravei35</a>
+                        <a href="mailto:example@mail.com" class="manager__link">example@mail.com</a>
                     </div>
-                    <div class="contacts__item">
-                        <h3 class="contacts__region">Исландия</h3>
-                        <p class="contacts__person">Менеджер направления:<br>Артем Ливанов</p>
-                        <a href="tel:+7812676700" class="contacts__link">+7 (812) 67-67-00</a>
-                        <a href="https://vk.com/muravei35" class="contacts__link">vk.com/muravei35</a>
-                        <a href="mailto:example@mail.com" class="contacts__link">example@mail.com</a>
+                    <div class="manager">
+                        <h3 class="manager__region">Исландия</h3>
+                        <p class="manager__person">Менеджер направления:<br>Артем Ливанов</p>
+                        <a href="tel:+7812676700" class="manager__link">+7 (812) 67-67-00</a>
+                        <a href="https://vk.com/muravei35" class="manager__link">vk.com/muravei35</a>
+                        <a href="mailto:example@mail.com" class="manager__link">example@mail.com</a>
                     </div>
-                    <div class="contacts__item">
-                        <h3 class="contacts__region">Мурманск</h3>
-                        <p class="contacts__person">Менеджер направления:<br>Артем Ливанов</p>
-                        <a href="tel:+7812676700" class="contacts__link">+7 (812) 67-67-00</a>
-                        <a href="https://vk.com/muravei35" class="contacts__link">vk.com/muravei35</a>
-                        <a href="mailto:example@mail.com" class="contacts__link">example@mail.com</a>
+                    <div class="manager">
+                        <h3 class="manager__region">Мурманск</h3>
+                        <p class="manager__person">Менеджер направления:<br>Артем Ливанов</p>
+                        <a href="tel:+7812676700" class="manager__link">+7 (812) 67-67-00</a>
+                        <a href="https://vk.com/muravei35" class="manager__link">vk.com/muravei35</a>
+                        <a href="mailto:example@mail.com" class="manager__link">example@mail.com</a>
                     </div>
                 </div>
             </div>
@@ -186,121 +200,145 @@
                     </ul>
                     <div class="price-tabs__content" id="finland">
                         <table class="price-tabs__content">
-                            <tr>
-                              <th>Город</th>
-                              <th>Локация</th>
-                              <th>Стоимость</th>
-                            </tr>
-                            <tr>
-                              <td>Осло</td>
-                              <td>Отель “Сияние”, 5 км от города</td>
-                              <td>250 000 \руб/чел</td>
-                            </tr>
-                            <tr>
-                              <td>Осло</td>
-                              <td>Отель “Сияние”, 5 км от города</td>
-                              <td>250 000 \руб/чел</td>
-                            </tr>
+                            <thead>
+                              <tr>
+                                  <th>Город</th>
+                                  <th>Локация</th>
+                                  <th>Стоимость</th>
+                              </tr>
+                            </thead>
+                           <tbody>
+                                <tr>
+                                 <td>Осло</td>
+                                 <td>Отель “Сияние”, 5 км от города</td>
+                                 <td>250 000 \руб/чел</td>
+                               </tr>
+                               <tr>
+                                 <td>Осло</td>
+                                 <td>Отель “Сияние”, 5 км от города</td>
+                                 <td>250 000 \руб/чел</td>
+                               </tr>
+                           </tbody>
                         </table>
                         <a href="#" class="price-tabs__regions-link">Посмотреть все предложения по Финляндии</a>
                     </div>
                     <div class="price-tabs__content"  id="norway">
                         <table class="price-tabs__content">
-                            <tr>
-                              <th>Город</th>
-                              <th>Локация</th>
-                              <th>Стоимость</th>
-                            </tr>
-                            <tr>
-                              <td>Осло</td>
-                              <td>Отель “Сияние”, 5 км от города</td>
-                              <td>250 000 \руб/чел</td>
-                            </tr>
-                            <tr>
-                              <td>Осло</td>
-                              <td>Отель “Сияние”, 5 км от города</td>
-                              <td>250 000 \руб/чел</td>
-                            </tr>
+                            <thead>
+                              <tr>
+                                  <th>Город</th>
+                                  <th>Локация</th>
+                                  <th>Стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td>Осло</td>
+                                  <td>Отель “Сияние”, 5 км от города</td>
+                                  <td>250 000 \руб/чел</td>
+                                </tr>
+                                <tr>
+                                  <td>Осло</td>
+                                  <td>Отель “Сияние”, 5 км от города</td>
+                                  <td>250 000 \руб/чел</td>
+                                </tr>
+                            </tbody>
                         </table>
                         <a href="#" class="price-tabs__regions-link">Посмотреть все предложения по Норвегии</a>
                     </div>
                     <div class="price-tabs__content" id="yakutia">
                         <table class="price-tabs__content">
-                            <tr>
-                              <th>Город</th>
-                              <th>Локация</th>
-                              <th>Стоимость</th>
-                            </tr>
-                            <tr>
-                              <td>Осло</td>
-                              <td>Отель “Сияние”, 5 км от города</td>
-                              <td>250 000 \руб/чел</td>
-                            </tr>
-                            <tr>
-                              <td>Осло</td>
-                              <td>Отель “Сияние”, 5 км от города</td>
-                              <td>250 000 \руб/чел</td>
-                            </tr>
+                            <thead>
+                              <tr>
+                                  <th>Город</th>
+                                  <th>Локация</th>
+                                  <th>Стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td>Осло</td>
+                                  <td>Отель “Сияние”, 5 км от города</td>
+                                  <td>250 000 \руб/чел</td>
+                                </tr>
+                                <tr>
+                                  <td>Осло</td>
+                                  <td>Отель “Сияние”, 5 км от города</td>
+                                  <td>250 000 \руб/чел</td>
+                                </tr>
+                            </tbody>
                         </table>
                         <a href="#" class="price-tabs__regions-link">Посмотреть все предложения по Якутии</a>
                     </div>
                     <div class="price-tabs__content" id="alyaska">
                         <table class="price-tabs__content">
-                            <tr>
-                              <th>Город</th>
-                              <th>Локация</th>
-                              <th>Стоимость</th>
-                            </tr>
-                            <tr>
-                              <td>Осло</td>
-                              <td>Отель “Сияние”, 5 км от города</td>
-                              <td>250 000 \руб/чел</td>
-                            </tr>
-                            <tr>
-                              <td>Осло</td>
-                              <td>Отель “Сияние”, 5 км от города</td>
-                              <td>250 000 \руб/чел</td>
-                            </tr>
+                            <thead>
+                              <tr>
+                                  <th>Город</th>
+                                  <th>Локация</th>
+                                  <th>Стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td>Осло</td>
+                                  <td>Отель “Сияние”, 5 км от города</td>
+                                  <td>250 000 \руб/чел</td>
+                                </tr>
+                                <tr>
+                                  <td>Осло</td>
+                                  <td>Отель “Сияние”, 5 км от города</td>
+                                  <td>250 000 \руб/чел</td>
+                                </tr>
+                            </tbody>
                         </table>
                         <a href="#" class="price-tabs__regions-link">Посмотреть все предложения по Аляске</a>
                     </div>
                     <div class="price-tabs__content" id="island">
                         <table class="price-tabs__content">
-                            <tr>
-                              <th>Город</th>
-                              <th>Локация</th>
-                              <th>Стоимость</th>
-                            </tr>
-                            <tr>
-                              <td>Осло</td>
-                              <td>Отель “Сияние”, 5 км от города</td>
-                              <td>250 000 \руб/чел</td>
-                            </tr>
-                            <tr>
-                              <td>Осло</td>
-                              <td>Отель “Сияние”, 5 км от города</td>
-                              <td>250 000 \руб/чел</td>
-                            </tr>
+                            <thead>
+                              <tr>
+                                  <th>Город</th>
+                                  <th>Локация</th>
+                                  <th>Стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td>Осло</td>
+                                  <td>Отель “Сияние”, 5 км от города</td>
+                                  <td>250 000 \руб/чел</td>
+                                </tr>
+                                <tr>
+                                  <td>Осло</td>
+                                  <td>Отель “Сияние”, 5 км от города</td>
+                                  <td>250 000 \руб/чел</td>
+                                </tr>
+                            </tbody>
                         </table>
                         <a href="#" class="price-tabs__regions-link">Посмотреть все предложения по Исландии</a>
                     </div>
                     <div class="price-tabs__content" id="murmansk">
                         <table class="price-tabs__content">
-                            <tr>
-                              <th>Город</th>
-                              <th>Локация</th>
-                              <th>Стоимость</th>
-                            </tr>
-                            <tr>
-                              <td>Осло</td>
-                              <td>Отель “Сияние”, 5 км от города</td>
-                              <td>250 000 \руб/чел</td>
-                            </tr>
-                            <tr>
-                              <td>Осло</td>
-                              <td>Отель “Сияние”, 5 км от города</td>
-                              <td>250 000 \руб/чел</td>
-                            </tr>
+                            <thead>
+                              <tr>
+                                  <th>Город</th>
+                                  <th>Локация</th>
+                                  <th>Стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td>Осло</td>
+                                  <td>Отель “Сияние”, 5 км от города</td>
+                                  <td>250 000 \руб/чел</td>
+                                </tr>
+                                <tr>
+                                  <td>Осло</td>
+                                  <td>Отель “Сияние”, 5 км от города</td>
+                                  <td>250 000 \руб/чел</td>
+                                </tr>
+                            </tbody>
                         </table>
                         <a href="#" class="price-tabs__regions-link">Посмотреть все предложения по Мурманску</a>
                     </div>      
