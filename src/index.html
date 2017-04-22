@@ -4,13 +4,15 @@
     <link href="https://fonts.googleapis.com/css?family=Jura:300|Ubuntu:300,500&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Северное сияние</title>
 </head>
 <body>
     <header class="header" style="background-image: url(img/main-bg.jpg)">
         <div class="header__inner">
             <div class="nav-burger nav-burger--close">
-            <span class="nav-burger__lines nav-burger__lines--close"></span>
+                <span class="nav-burger__lines nav-burger__lines--close"></span>
             </div>
             <nav class="main-nav">
                 <ul class="main-nav__list">
@@ -100,10 +102,10 @@
                 </div>
                 <h2 class="place__title">Где и когда</h2>
                 <ul>
-                  <li class="place__item--summer">летом</li>
-                  <li class="place__item--winter">зимой</li>
-                  <li class="place__item--spring">весной</li>
-                  <li class="place__item--autumn">осенью</li>
+                  <li class="place__item place__item--summer">летом</li>
+                  <li class="place__item place__item--winter">зимой</li>
+                  <li class="place__item place__item--spring">весной</li>
+                  <li class="place__item place__item--autumn">осенью</li>
                 </ul>
                 <p class="place__text">Наблюдать сияние можно в Якутске, Салехарде, Мурманске, на Таймыре и на Аляске. Наиболее часто полярное сияние встречается в областях близ Аляски, в Гудзоновом заливе, в Большом Медвежьем озере, Исландии, южной части Гренландии, на севере Норвегии и Сибири.</p>
             </div>
@@ -136,11 +138,21 @@
                 </div>
             </div>
         </section>
-      
+
         <section class="contacts" id="contacts">
             <div class="contacts__inner">
                 <h2 class="contacts__title">Контакты</h2>
-                <div class="contacts__row">
+                <div class="contacts__mobile">
+                    <ul class="contacts__list">
+                        <li class="contacts__item"><a href="#" class="contacts__link" id="link">Финляндия</a></li>
+                        <li class="contacts__item"><a href="#" class="contacts__link" id="link">Норвегия</a></li>
+                        <li class="contacts__item"><a href="#" class="contacts__link" id="link">Якутия</a></li>
+                        <li class="contacts__item"><a href="#" class="contacts__link" id="link">Аляска</a></li>
+                        <li class="contacts__item"><a href="#" class="contacts__link" id="link">Исландия</a></li>
+                        <li class="contacts__item"><a href="#" class="contacts__link" id="link">Мурманск</a></li>
+                    </ul>
+                </div>
+                <div class="row">
                     <div class="manager">
                         <h3 class="manager__region">Финляндия</h3>
                         <p class="manager__person">Менеджер направления:<br>Артем Ливанов</p>

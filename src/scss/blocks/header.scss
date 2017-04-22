@@ -1,8 +1,24 @@
 .header {
-	color: $text-color;
-	&__inner {
-		width: $screen-md;
-		margin: 0 auto;
+	color: $text-white;
+	@media (min-width:$screen-xs) {
+		.nav-burger {
+			display: block;
+		}
+		.main-nav {
+			display: none;
+		}
 	}
-	
+	@media (min-width:$screen-sm) {
+			.nav-burger {
+			display: none;
+		}
+		.main-nav {
+			display: block;
+		}
+	}
+	@media (min-width:$screen-lg) {
+		.nav-burger {
+			display: none;
+		}
+	}
 }
