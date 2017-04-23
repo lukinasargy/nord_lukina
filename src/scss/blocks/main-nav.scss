@@ -1,9 +1,11 @@
 .main-nav {
 	@media (in-width:$screen-xs)  {
-		
+		&__list {
+
+		}
 	}
 	@media (min-width:$screen-sm) {
-	background-color: rgba(0,0,0, 0.3);
+		background-color: rgba(0,0,0, 0.3);
 		&__list {
 			display: flex;
 			flex-direction: row;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="no-js">
+<html lang="ru" class="">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Jura:300|Ubuntu:300,500&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -11,11 +11,24 @@
 <body>
     <header class="header" style="background-image: url(img/main-bg.jpg)">
         <div class="header__inner">
-            <div class="nav-burger nav-burger--close">
-                <span class="nav-burger__lines nav-burger__lines--close"></span>
-            </div>
+<!--             <div class="nav-burger nav-burger--close">
+                <span class="nav-burger__lines nav-burger__lines--close" id="burger">=</span>
+            </div> -->
+        <nav class="menu">
+            <ul class="active">
+                  <li class="main-nav__item"><a href="#legends" class="main-nav__link main-nav__link--active">Легенды</a></li>
+                  <li class="main-nav__item"><a href="#facts" class="main-nav__link">Факты</a></li>
+                  <li class="main-nav__item"><a href="#place" class="main-nav__link">Где и когда</a></li>
+                  <li class="main-nav__item"><a href="#price" class="main-nav__link">Цены на отели</a></li>
+                  <li class="main-nav__item"><a href="#reviews" class="main-nav__link">Отзывы</a></li>
+                  <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
+            </ul>
+
+      <a class="toggle-nav" href="#">&#9776;</a>
+    </nav>
+<!--             <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
             <nav class="main-nav">
-                <ul class="main-nav__list">
+                <ul class="main-nav__list" id="navigation">
                   <li class="main-nav__item"><a href="#legends" class="main-nav__link main-nav__link--active">Легенды</a></li>
                   <li class="main-nav__item"><a href="#facts" class="main-nav__link">Факты</a></li>
                   <li class="main-nav__item"><a href="#place" class="main-nav__link">Где и когда</a></li>
@@ -23,14 +36,14 @@
                   <li class="main-nav__item"><a href="#reviews" class="main-nav__link">Отзывы</a></li>
                   <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         <div class="main-title">
             <h1 class="main-title__head">Северное сияние</h1>
-            <strong class="main-title__description">Lorem ipsum dolor sit amet.</strong>
+            <strong class="main-title__description">Факты, легенды и места обитания</strong>
         </div>
         <div class="side-bar">
             <a href="https://vk.com" class="social--vk">vk</a>
-            <a href="#" class="sibar-bar__link">photo</a>
+            <a href="#" class="sibar-bar__link">Больше фотографий</a>
         </div>
         </div>
     </header>
@@ -364,5 +377,8 @@
             <a href="tel:+79211234567" class="footer__phone">+7 (921) 123-45-67</a>
         </div>   
     </footer>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 </html>
