@@ -1,7 +1,5 @@
 @font-face {
   font-family: "Nord";
-  src:url(../fonts/nord.ttf);
-  font-weight: normal;
-  font-style: normal;
-  // src:url(..fonts/nord_medium.otf);
+  src: url(../fonts/nord-webfont.woff2) format('woff2'),
+       url(../fonts/nord-webfont.woff) format('woff');
 }

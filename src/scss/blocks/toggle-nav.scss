@@ -7,18 +7,15 @@
 @media (min-width: $screen-sm) {
   .menu {
     width:100%;
-    
     background-color: rgba(0,0,0, 0.3);
     .active {
-      
+      top:-100px;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       height: 60px;
       align-items: center;
-      &__item {
 
-      }
     }
   }
 }

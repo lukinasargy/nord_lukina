@@ -1,15 +1,18 @@
 .header {
 	color: $text-white;
 	.main-nav {display: none;}
-	height: 500px;
-	display: flex;
+	
 
 	background-size: cover;
 	&__inner {
-		position: relative;
+		// position: relative;
+		display: flex;
+		justify-content: space-around;
+		flex-direction:column;
 		@media (min-width: $screen-xs) {
  			width: $screen-xs;
  			margin:auto;
+ 			height: 500px;
  			&:after {
 				content: '';
 				clear: both;
@@ -18,19 +21,13 @@
  		}
 		@media (min-width: $screen-sm) {
 			width: $screen-sm;
+			height: 600px;
 		}
-		@media (min-width: $screen-lg) {width: $screen-lg;}
-	}
-
-	@media (min-width:$screen-xs) {
-
-
-	}
-	@media (min-width:$screen-sm) {
-
-		.main-nav {
-			// display: block;
+		@media (min-width: $screen-lg) {
+			width: $screen-lg;
+			height: 650px;
+			}
 		}
 
-	}
+
 }
