@@ -86,7 +86,11 @@ gulp.task('img', function () {
     .pipe(newer(dirs.build + '/img'))                       // оставить в потоке только новые файлы (сравниваем с содержимым папки билда)
     .pipe(gulp.dest(dirs.build + '/img'));                  // записываем файлы (путь из константы)
 });
-
+// Copying fonts
+gulp.task('fonts', function() {
+  return gulp.src(dirs.source + '/fonts/**/*.*')
+    .pipe(gulp.dest(dirs.build + '/fonts')); 
+});
 // ЗАДАЧА: Оптимизация изображений (ЗАДАЧА ЗАПУСКАЕТСЯ ТОЛЬКО ВРУЧНУЮ)
 gulp.task('img:opt', function () {
   return gulp.src([
@@ -167,6 +171,7 @@ gulp.task('js', function () {
       dirs.source + '/js/jquery-migrate-1.4.1.min.js',
       dirs.source + '/js/owl.carousel.min.js',
       dirs.source + '/js/script.js',
+      dirs.source + '/js/burger.js',
     ])
     .pipe(plumber({ errorHandler: onError }))
     .pipe(concat('script.min.js'))
@@ -181,6 +186,7 @@ gulp.task('build', gulp.series(
   'png:sprite',
   gulp.parallel('style', 'img', 'js'),
   'pug',
+  'fonts',
   'html'
 ));
 

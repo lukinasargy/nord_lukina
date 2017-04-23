@@ -3,6 +3,9 @@
 		margin: 0;
 		font-family: $font-family-third;
 		padding-top: 170px;
-	}
 
+	}
+	&__description {
+		font-weight: normal;
+	}
 }
