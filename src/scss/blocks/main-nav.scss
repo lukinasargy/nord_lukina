@@ -1,16 +1,65 @@
 .main-nav {
-	@media (in-width:$screen-xs)  {
-		&__list {
-
-		}
-	}
-	@media (min-width:$screen-sm) {
-		background-color: rgba(0,0,0, 0.3);
-		&__list {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-		}
-	}
-
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  width: 9.86em;
+  &--visible {
+    display: block; 
+  }
+  
+  @media (min-width: $screen-sm) {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+  }
+  @media (min-width: $screen-sm) {
+    margin-top: 20px;
+  }
+  &__item {
+    display: block;
+    flex-grow:1;
+    
+    &:first-child {
+      a {
+        padding-top: 7.06em;
+        @media (min-width: $screen-sm) {
+          padding-right: 1em;
+          padding-top: 0;
+        }
+      }
+    }
+    &:last-child {
+      a {
+        padding-bottom: 10.59em;
+        
+        @media (min-width: $screen-sm) {
+          padding-bottom: 0;
+        }
+      }
+    }
+    
+    a {
+      font-size: $font-size;
+      display: block;
+      padding: 0 1em;
+      height: 3em;
+      line-height: 3em;
+      font-weight: 700;
+      text-decoration: none;
+      background-color: #1c1531;
+      @media (min-width: $screen-sm) {
+        background-color: rgba(0,0,0, 0.4);
+        line-height: 60px;
+        height: 60px;
+      }
+    }
+  }
 }
