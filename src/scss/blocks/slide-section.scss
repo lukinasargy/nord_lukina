@@ -1,24 +1,71 @@
 .slide-section {
 
-	height: 400px;
+	
 	@media (min-width: $screen-xs) {
 			background-image: url(../img/slider.jpg);
 			background-size: cover;
 			color: $text-white;
+			&__title {
+			padding: 40px 0 40px 0;
+			font-size: 20px;
+			}
+			.slide-section__visual {
+				display: none;
+			}
 			.slick-next, .slick-arrow {
 				display: none;
 			}
+			.slider__text {
+				margin: 16px 0 134px 0;
+				line-height: 20px;
+				font-family: $font-family-second;
+				font-weight: 300;
+				font-size: 12px;
+			}
  		}
  	@media (min-width: $screen-sm) {
-		width: 50%;
 		background: none;
+		color: $text-dark;
+		background-color: $light-grey;
+
+		
+		.slide-section__info {
+			float: left;
+			display: inline-block;
+			width: 50%;
 		}
-	@media (min-width: $screen-lg) {	
+		.slide-section__visual {
+				float: left;
+				display: inline-block;
+				width: 50%;
+				height: 100%;
+				.slide-section__photo{
+					width: 100%;
+				}
+		}
+		.slider__text {
+			padding: 0 25px 0 25px;
+			margin: 16px 0 94px 0px;
+		}
+	}
+	@media (min-width: $screen-lg) {
+		background-color: $text-white;
+		height: 520px;	
+		&__title {
+			padding: 50px 0 50px 0;
+			font-size: 30px;
+			}
+		.slider__text {
+			font-size: 16px;
+			line-height: 30px;
+
+		}
 		}
 
+	
+
 	&__inner {
-		@media (min-width: $screen-xs) {		
-			// justify-content: center;
+		@media (min-width: $screen-xs) {
  			width: 295px;
  			margin:auto;
  			&:after {
@@ -33,7 +80,5 @@
 		@media (min-width: $screen-lg) {
 			width: 1170px;			}
 	}
-	&__title {
-		padding: 40px 0 40px 0;
-	}
+
 }
