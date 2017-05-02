@@ -26,5 +26,14 @@
 		top:50%;
 		width: 200px;
 	}
+	.social--vk {
+		// @include sprite($kraken);
+		margin-left: 5px;
+		margin-top: 25px;
+		@media (min-width: $screen-lg) {
+		margin-top: 40px;
+		}
+		display: block;
+	}
 
 }
