@@ -1,8 +1,18 @@
 .facts {
-	background-color: $light-grey;
 	.facts__info {
 		display: flex;
 		flex-direction:row;
+	}
+	@media (min-width: $screen-xs) {
+		background-color: $light-grey;
+
+	}
+	@media (min-width: $screen-sm) {
+		background-color: $text-white;
+	}
+	@media (min-width: $screen-lg) {
+		background-color: $light-grey;
+
 	}
 
 
@@ -18,7 +28,7 @@
 			}
  		}
 		@media (min-width: $screen-sm) {
-
+			
 			justify-content: space-between;
 			width: 746px;
 		}
