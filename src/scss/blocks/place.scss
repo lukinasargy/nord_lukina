@@ -1,0 +1,56 @@
+.place {
+	&__img {
+	width:100%;
+	}
+	ul {
+		display: flex;
+		
+	}
+	li {
+		width: 33%;
+		text-align: center;
+		position: relative;
+	}
+	
+	&__item--summer:before,&__item--winter:before,&__item--spring:before,&__item--autumn:before {
+		position: absolute;
+		content: '';
+		top:0;
+		left: 0;
+		width: 10px;
+		height: 10px
+	}
+	&__item--summer:before{
+		background-color: #ef8989;
+	}
+	&__item--winter:before{
+		background-color: #04a8a8;
+	}
+	&__item--spring:before{
+		background-color: #cdd63f;
+	}
+	&__item--autumn:before{
+		background-color: #efb672;
+	}
+	@media (min-width: $screen-sm) {
+	}
+	@media (min-width: $screen-lg) {
+		&__item--summer:before,&__item--winter:before,&__item--spring:before,&__item--autumn:before {
+			width: 15px;
+			height: 15px;
+		}
+	}
+	&__inner {
+		width: 295px;
+ 		margin:auto;
+		display: flex;
+		flex-direction: column;
+		@media (min-width: $screen-sm) {
+			flex-direction: row;
+			width: 746px;
+		}
+		@media (min-width: $screen-lg) {
+			width: 1170px;
+		}
+	}
+}
