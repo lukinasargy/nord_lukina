@@ -1,21 +1,100 @@
 .facts {
+	color: $text-dark;
+	background-color: $lighter-grey;
 	.facts__info {
+		font-family: $font-family-second;
 		display: flex;
-		flex-direction:row;
-	}
-	@media (min-width: $screen-xs) {
-		background-color: $light-grey;
+		flex-direction:column;
+		p{
+			margin: 0;
+			padding-top: 15px;
+		}
 
-	}
-	@media (min-width: $screen-sm) {
-		background-color: $text-white;
-	}
-	@media (min-width: $screen-lg) {
-		background-color: $light-grey;
+		span {
+				font-size: 25px;
+				font-weight: 800;
+				color: #e6e6e6;
+			}
+		@media (min-width: $screen-sm) {
+			flex-direction:row;
+			p {
+				padding-top: 20px;
+			}
 
+		}
+		@media (min-width: $screen-lg) {
+			p {
+				padding-top: 30px;
+			}
+			span {
+				font-size: 40px;
+			}
+		}
 	}
 
+	.facts__item {
+		position: relative;
+		&--square:before {
+			content: '';
+    		display: block;
+    		position: absolute;
+    		width: 10px;
+    		height: 10px;
+    		top:10px;
+    		left:-5px;
+    		background-color: $azure;
+		}
 
+		&--line:after {
+			content: '';
+    		display: block;
+    		position: absolute;
+    		width: 1px;
+    		height: 100%;
+    		top:20px;
+    		left:0px;
+    		background-color: $azure;	
+		}
+
+		@media (min-width: $screen-xs) {
+			padding-left: 12px;
+			padding-bottom: 35px;
+			&--line:last-child:after {
+			display: none;
+			}
+		}
+		@media (min-width: $screen-sm) {
+			padding-left: 0;
+			padding-bottom: 30px;
+			width: 33%;
+			&--square:before {
+				top:20px;
+			}
+			&--line:after {
+				top:25px;
+				width: 100%;
+				height: 1px;
+			}
+			&--line:last-child:after {
+			display: block;
+			}
+		}
+		@media (min-width: $screen-lg) {
+			padding-bottom: 60px;
+			&--square:before {
+				width: 15px;
+    			height: 15px;
+				top:35px;
+				left: 0;
+			}
+			&--line:after {
+				top:43px;
+			}
+		}
+	}
+	.facts__title {
+	padding: 40px 0 40px 0;
+	}
 	&__inner {
 		@media (min-width: $screen-xs) {		
 			justify-content: center;
