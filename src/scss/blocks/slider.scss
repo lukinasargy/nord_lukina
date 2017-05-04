@@ -1,9 +1,0 @@
-.slider {
-	display: none;
-	@extend .btn;
-
-	@media (min-width:$screen-sm) {
-		display: block;
-		
-	}
-}
