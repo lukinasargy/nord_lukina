@@ -8,6 +8,7 @@
 		p{
 			margin: 0;
 			padding-top: 15px;
+			font-size: 12px;
 		}
 
 		span {
@@ -19,12 +20,14 @@
 			flex-direction:row;
 			p {
 				padding-top: 20px;
+				padding-right: 30px;
 			}
 
 		}
 		@media (min-width: $screen-lg) {
 			p {
 				padding-top: 30px;
+				font-size: 16px;
 			}
 			span {
 				font-size: 40px;

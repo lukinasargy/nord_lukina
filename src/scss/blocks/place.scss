@@ -2,6 +2,14 @@
 	&__img {
 	width:100%;
 	}
+	&__title {
+		font-size: 20px;
+		margin: 20px 0 20px 0;
+	}
+	&__text {
+		font-family: $font-family-second;
+		font-size: 12px;
+	}
 	ul {
 		display: flex;
 		
@@ -11,42 +19,59 @@
 		text-align: center;
 		position: relative;
 	}
-	
-	&__item--summer:before,&__item--winter:before,&__item--spring:before,&__item--autumn:before {
+
+	@media (min-width: $screen-sm) {
+			// &__img {
+			// 	width: 50%;
+			// }
+			&__info {
+				display: flex; 
+				flex-direction: row-reverse; 
+			}
+			&__about {
+				width: 50%;
+			}
+		}
+
+	&__item {
+		font-size: 10px;
+		&--summer:before,&--winter:before,&--spring:before,&--autumn:before {
 		position: absolute;
 		content: '';
 		top:0;
 		left: 0;
 		width: 10px;
 		height: 10px
-	}
-	&__item--summer:before{
-		background-color: #ef8989;
-	}
-	&__item--winter:before{
-		background-color: #04a8a8;
-	}
-	&__item--spring:before{
-		background-color: #cdd63f;
-	}
-	&__item--autumn:before{
-		background-color: #efb672;
-	}
-	@media (min-width: $screen-sm) {
-	}
-	@media (min-width: $screen-lg) {
-		&__item--summer:before,&__item--winter:before,&__item--spring:before,&__item--autumn:before {
-			width: 15px;
-			height: 15px;
 		}
-	}
+		&--summer:before{
+			background-color: #ef8989;
+		}
+		&--winter:before{
+			background-color: #04a8a8;
+		}
+		&--spring:before{
+			background-color: #cdd63f;
+		}
+		&--autumn:before{
+			background-color: #efb672;
+		}
+		@media (min-width: $screen-sm) {
+		}
+		@media (min-width: $screen-lg) {
+			&--summer:before,&--winter:before,&--spring:before,&--autumn:before {
+				width: 15px;
+				height: 15px;
+			}
+		}
+}
+	
+
 	&__inner {
 		width: 295px;
  		margin:auto;
 		display: flex;
 		flex-direction: column;
 		@media (min-width: $screen-sm) {
-			flex-direction: row;
 			width: 746px;
 		}
 		@media (min-width: $screen-lg) {
