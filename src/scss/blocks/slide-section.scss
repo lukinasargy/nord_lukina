@@ -5,6 +5,7 @@
 			background-image: url(../img/slider.jpg);
 			background-size: cover;
 			color: $text-white;
+			height: 400px;
 			&__title {
 			padding: 40px 0 40px 0;
 			font-size: 20px;
@@ -12,11 +13,11 @@
 			.slide-section__visual {
 				display: none;
 			}
-			.slick-next, .slick-arrow {
-				display: none;
-			}
+			// .slick-next, .slick-arrow {
+			// 	display: none;
+			// }
 			.slider__text {
-				margin: 16px 0 134px 0;
+				margin: 16px 0 70px 0;
 				line-height: 20px;
 				font-family: $font-family-second;
 				font-weight: 300;
