@@ -1,7 +1,7 @@
 .facts {
 	color: $text-dark;
 	background-color: $lighter-grey;
-	.facts__info {
+	&__info {
 		font-family: $font-family-second;
 		display: flex;
 		flex-direction:column;
@@ -35,7 +35,7 @@
 		}
 	}
 
-	.facts__item {
+	&__item {
 		position: relative;
 		&--square:before {
 			content: '';
@@ -95,8 +95,12 @@
 			}
 		}
 	}
-	.facts__title {
-	padding: 40px 0 40px 0;
+	&__title {
+		font-size: 20px;
+		padding: 40px 0 40px 0;
+		@media (min-width: $screen-lg) {
+			font-size: 30px;
+		}
 	}
 	&__inner {
 		@media (min-width: $screen-xs) {		
