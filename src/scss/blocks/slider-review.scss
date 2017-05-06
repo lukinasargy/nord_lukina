@@ -1,0 +1,49 @@
+.slider-review {
+	&__item {
+		font-size: 10px;
+		font-family: $font-family-second;
+
+	}
+	&__item {
+	display: inline-block;
+	}
+	&__text {
+		padding: 20px 15px;
+		background-color: #FFF;
+		width: 170px;
+		display: inline-block;
+		margin: 0 0 15px 30px;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 25px 17px 0;
+			border-color: transparent #fff transparent transparent;
+			top: 0;
+			left:-25px;
+		}
+	}
+
+	@media (min-width: $screen-sm) {
+
+		}
+	@media (min-width: $screen-lg) {
+				&__item {
+					font-size: 16px;
+				}
+				&__text {
+					width: 280px;
+					padding: 30px 20px;
+					margin: 0 0 35px 70px;
+
+					&:before {
+						border-width: 0 45px 28px 0;
+						border-color: transparent #fff transparent transparent;
+						top: 0;
+						left:-45px;}
+				}
+		}
+}

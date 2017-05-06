@@ -15,4 +15,25 @@ $(document).ready(function(){
 	    }
 	  ]
 	});
+
+	$('.slider-review').slick({
+	  mobileFirst: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  dots: true,
+	  infinite: true,
+	  dotsClass:'review-dots',
+	  // .addClass('.review-dots'),
+	  responsive: [
+	    {
+	      breakpoint: 767,
+	      settings: {
+	      	slidesToShow: 2,
+	  		slidesToScroll: 1,
+	      }
+	    }
+	  ]
+	  // $('.slick-dots').addClass('review-dots');
+	});
 });

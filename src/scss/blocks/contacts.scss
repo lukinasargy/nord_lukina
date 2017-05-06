@@ -1,0 +1,16 @@
+.contacts {
+	&__countries {
+		// display: none;
+	}
+	
+	&__inner {
+		width: 300px;
+ 		margin:auto;
+		@media (min-width: $screen-sm) {
+			width: 746px;
+		}
+		@media (min-width: $screen-lg) {
+			width: 1170px;
+		}
+	}
+}

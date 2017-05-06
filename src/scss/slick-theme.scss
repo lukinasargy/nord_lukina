@@ -188,7 +188,7 @@ $slick-opacity-not-active: 0.25 !default;
         cursor: pointer;
         button {
             border: 0;
-            background: #b2dad0;
+            background: $blue;
             display: block;
             height: 15px;
             width: 15px;
@@ -228,5 +228,70 @@ $slick-opacity-not-active: 0.25 !default;
             background: $azure;
 
         }
+        // &.review-dots.slick-active button:before {background: #2f4159;}
+        
+    }
+}
+.review-dots {
+    position: absolute;
+    bottom: -25px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    li {
+        position: relative;
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin: 0 13px;
+        padding: 0;
+        cursor: pointer;
+        button {
+            border: 0;
+            background: #fff;
+            display: block;
+            height: 15px;
+            width: 15px;
+            outline: none;
+            line-height: 0px;
+            font-size: 0px;
+            color: transparent;
+            padding: 5px;
+            cursor: pointer;
+            &:hover, &:focus {
+                outline: none;
+                &:before {
+                    opacity: $slick-opacity-on-hover;
+                }
+            }
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: $slick-dot-character;
+                width: 15px;
+                height: 15px;
+                font-family: $slick-font-family;
+                font-size: $slick-dot-size;
+                line-height: 20px;
+                text-align: center;
+                color: $slick-dot-color;
+                opacity: $slick-opacity-not-active;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+        &.slick-active button:before {
+
+            color: $slick-dot-color-active;
+            opacity: $slick-opacity-default;
+            background: #2f4159;
+
+        }
+        // &.review-dots.slick-active button:before {background: #2f4159;}
+        
     }
 }

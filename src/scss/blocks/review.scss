@@ -1,0 +1,62 @@
+
+.review {
+	color: $text-dark;
+	background-color: $blue;
+	height: 270px;
+	&__title {
+		font-size: 20px;
+		padding: 30px 0 30px 0;
+	}
+	&__profile {
+		display: inline-block;
+		width: 66px;
+		float: left;
+		
+	}
+	&__photo {
+		width: 100%;
+		height: 100%;
+		padding-bottom: 15px;
+		}
+	@media (min-width: $screen-sm) {
+		&__profile {
+			width: 105px;
+			
+		}
+
+		&__photo{
+				padding-bottom: 10px;
+			}
+
+	}
+	@media (min-width: $screen-lg) {
+		height: 440px;
+		&__title {
+		font-size: 30px;
+		padding: 70px 0 40px 0;
+		}
+		&__profile {
+			width: 170px;
+			
+		}
+		&__photo{
+				padding-bottom: 25px;
+			}
+	}
+
+
+	&__inner {
+		width: 300px;
+ 		margin:auto;
+		@media (min-width: $screen-sm) {
+			width: 746px;
+		}
+		@media (min-width: $screen-lg) {
+			width: 1170px;
+		}
+	}
+	.slick-dots.slick-active button:before {
+            background: #2f4159;
+
+            }
+}
