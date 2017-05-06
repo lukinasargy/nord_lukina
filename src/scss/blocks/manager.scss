@@ -7,6 +7,14 @@
 	  width: 100%;
 	  height: 100%;
 	  z-index: 2;
+  @media (min-width: $screen-sm) {
+    // display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: none;
+    position: static;
+  }
 }
 .manager {
   position: absolute;
@@ -14,10 +22,47 @@
   left: 50%;
   transform: translate(-50%,-50%);
   background-color: #fff;
-  width: 50vw;
-  height: 50vh;
+  width: 50%;
+  height: 50%;
   padding: 10%;
   display: none;
+  @media (min-width: $screen-sm) {
+    font-size: 12px;
+    line-height: 20px;
+    font-family: $font-family-second;
+    color: $text-white;
+    position: static;
+    display: block;
+    background: none;
+    transform: none;
+    flex-basis: 25%;
+    padding: 0 0 55px 0;
+    &__region {
+      font-size: 14px;
+      font-family: $font-family;
+      position: relative;
+      line-height: 50px;
+      margin: 0;
+      padding-left: 25px;
+        &:before {
+        position: absolute;
+        content: '';
+        top:20px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: $azure;
+        }
+    }
+  }
+  @media (min-width: $screen-lg) {
+    font-size: 14px;
+    padding: 0 0 140px 0;
+    flex-basis: 16.66%;
+    &__region {
+      font-size: 20px;
+    }
+  }
 }
 .manager__close {
   position: absolute;
@@ -28,5 +73,7 @@
   width: 30px;
   height: 30px;
   cursor:pointer;
-  
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
 }
