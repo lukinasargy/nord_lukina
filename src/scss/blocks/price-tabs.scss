@@ -7,6 +7,8 @@
 	}
 	&--active {
 		color: $azure;
+			line-height: 50px;
+		font-size: 12px;
 		position: relative;
 
 	}
@@ -96,12 +98,18 @@
 			width: 16.66%;
 			font-size: 12px;
 		}
+		&--active {
+			width: 16.66%;
+
+		}
 		&__mobile {
 			display: none;
 		}
 	}
 	@media (min-width: $screen-lg) {
 		&__link {font-size: 20px;}
+		&--active {font-size: 20px;}
+
 		&__regions-link {font-size: 16px;}
 	}
 }
