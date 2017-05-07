@@ -125,7 +125,7 @@ h2 {
 
 .slick-prev {
   z-index: 2;
-  background-image: url(../img/sprite-038847951725947927.png);
+  background-image: url(../img/sprite-08193357147912581.png);
   background-position: -108px -136px;
   width: 34px;
   height: 38px;
@@ -134,12 +134,12 @@ h2 {
     left: auto;
     right: 0px; }
   .slick-prev:before {
-    content: 108px, 136px, -108px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-038847951725947927.png", "left-sm"; }
+    content: 108px, 136px, -108px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-08193357147912581.png", "left-sm"; }
     [dir="rtl"] .slick-prev:before {
-      content: 146px, 136px, -146px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-038847951725947927.png", "right-sm"; }
+      content: 146px, 136px, -146px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-08193357147912581.png", "right-sm"; }
 
 .slick-next {
-  background-image: url(../img/sprite-038847951725947927.png);
+  background-image: url(../img/sprite-08193357147912581.png);
   background-position: -146px -136px;
   width: 34px;
   height: 38px;
@@ -148,9 +148,9 @@ h2 {
     left: -43px;
     right: auto; }
   .slick-next:before {
-    content: 146px, 136px, -146px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-038847951725947927.png", "right-sm"; }
+    content: 146px, 136px, -146px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-08193357147912581.png", "right-sm"; }
     [dir="rtl"] .slick-next:before {
-      content: 108px, 136px, -108px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-038847951725947927.png", "left-sm"; }
+      content: 108px, 136px, -108px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-08193357147912581.png", "left-sm"; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -664,8 +664,8 @@ h2 {
   .footer__text, .footer__phone {
     line-height: 60px; }
   .footer__phone {
-    padding-right: 44px;
-    padding-left: 34px; }
+    padding-right: 35px;
+    padding-left: 35px; }
 
 a {
   text-decoration: none;
@@ -914,7 +914,7 @@ ul {
   .price__inner{
     width: 746px; }
   .footer__phone{
-    padding-right: 60px;
+    padding-right: 50px;
     padding-left: 50px; }
   .footer__inner{
     width: 746px;
@@ -922,7 +922,7 @@ ul {
 
 @media (min-width: 1280px){
   .slick-prev{
-    background-image: url(../img/sprite-038847951725947927.png);
+    background-image: url(../img/sprite-08193357147912581.png);
     background-position: 0px -136px;
     width: 50px;
     height: 56px;
@@ -931,11 +931,11 @@ ul {
     left: auto;
     right: 0px; }
   .slick-prev:before{
-    content: 0px, 136px, 0px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-038847951725947927.png", "left"; }
+    content: 0px, 136px, 0px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-08193357147912581.png", "left"; }
   [dir="rtl"] .slick-prev:before{
-    content: 54px, 136px, -54px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-038847951725947927.png", "right"; }
+    content: 54px, 136px, -54px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-08193357147912581.png", "right"; }
   .slick-next{
-    background-image: url(../img/sprite-038847951725947927.png);
+    background-image: url(../img/sprite-08193357147912581.png);
     background-position: -54px -136px;
     width: 50px;
     height: 56px;
@@ -944,9 +944,9 @@ ul {
     left: -70px;
     right: auto; }
   .slick-next:before{
-    content: 54px, 136px, -54px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-038847951725947927.png", "right"; }
+    content: 54px, 136px, -54px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-08193357147912581.png", "right"; }
   [dir="rtl"] .slick-next:before{
-    content: 0px, 136px, 0px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-038847951725947927.png", "left"; }
+    content: 0px, 136px, 0px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-08193357147912581.png", "left"; }
   .price-tabs__tabs{
     font-size: 16px;
     width: 770px; }
@@ -1061,8 +1061,8 @@ ul {
   .price__inner{
     width: 1170px; }
   .footer__phone{
-    padding-right: 90px;
-    padding-left: 40px; }
+    padding-right: 35px;
+    padding-left: 35px; }
   .footer__inner{
     width: 1170px;
     font-size: 16px; } }
