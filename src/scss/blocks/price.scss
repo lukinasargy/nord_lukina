@@ -1,0 +1,26 @@
+.price {
+	@media (min-width: $screen-sm) {
+		
+	}
+
+	&__inner {
+		@media (min-width: $screen-xs) {
+ 			width: 295px;
+ 			margin:auto;
+ 			&:after {
+				content: '';
+				clear: both;
+				display: table;
+			}
+ 		}
+		@media (min-width: $screen-sm) {
+
+			justify-content: space-between;
+			width: 746px;
+		}
+		@media (min-width: $screen-lg) {
+			width: 1170px;
+			}
+		
+	}
+}

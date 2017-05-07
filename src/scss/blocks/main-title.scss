@@ -3,9 +3,17 @@
 		margin: 0;
 		font-family: $font-family-third;
 		font-weight: 400;
+		font-size: 30px;
+	@media (min-width: $screen-sm) {
+		font-size: 50px;
+	}
 
 	}
 	&__description {
 		font-weight: 300;
+		font-size: 16px;
+	@media (min-width: $screen-sm) {
+		font-size: 20px;
+	}
 	}
 }
