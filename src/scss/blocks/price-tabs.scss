@@ -2,13 +2,106 @@
 	&__list {
 		display: none;
 	}
+	&__mobile{
+		display: block;
+	}
+	&--active {
+		color: $azure;
+		position: relative;
 
+	}
+	&--active:after {
+		content: '';
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		border-left: 1px solid $azure;
+	  	border-top: 1px solid $azure;
+	  	transform: rotate(-135deg);
+	  	top:22px;
+	  	left: 72px;
+
+	}
+
+	&__link {
+		line-height: 50px;
+		font-size: 12px;
+		position: relative;
+	}
+
+	&__link:after {
+		content: '';
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		border-left: 1px solid $text-grey;
+	  	border-top: 1px solid $text-grey;
+	  	transform: rotate(135deg);
+	  	top:24px;
+	  	left: 72px;
+	}
+
+	&__content {
+			display: none;
+		}
+	&__tabs {
+		padding: 5px 0px;
+		width: 300px;
+		font-family: $font-family-second;
+		font-size: 10px;
+		empty-cells:hide;
+		text-align: center;
+		display: table-cell;
+		border-collapse:collapse;
+		tbody,tr {width: 100%;}
+		td,th {
+			padding:10px 16px;
+			border: 1px solid #d0d0d0;
+
+		}
+		@media (min-width: $screen-sm) {
+			white-space: nowrap;
+			width: 490px;
+			td,th {
+				height: 45px;
+				padding: 0 30px;
+			}
+		}
+		@media (min-width: $screen-lg) {
+			font-size: 16px;
+			width: 770px;
+			td {
+				height: 70px;
+				padding: 0 60px;
+			}
+			th {
+				width: 63px;
+				padding: 0 60px;
+			}
+		}
+
+	}
+	&__regions-link {
+		font-family: $font-family-second;
+		font-size: 12px;
+		text-decoration: underline;
+		line-height: 70px;
+	}
 	@media (min-width: $screen-sm) {
+
 		&__list {
 			display: flex;
+		}
+		&__link {
+			width: 16.66%;
+			font-size: 12px;
 		}
 		&__mobile {
 			display: none;
 		}
+	}
+	@media (min-width: $screen-lg) {
+		&__link {font-size: 20px;}
+		&__regions-link {font-size: 16px;}
 	}
 }

@@ -1,11 +1,14 @@
 .price {
 	@media (min-width: $screen-sm) {
-		
+		background-color: $light-grey;
 	}
+	@media (min-width: $screen-lg) {
+		background-color: #FFF;
+		}
 
 	&__inner {
 		@media (min-width: $screen-xs) {
- 			width: 295px;
+ 			width: 300px;
  			margin:auto;
  			&:after {
 				content: '';
