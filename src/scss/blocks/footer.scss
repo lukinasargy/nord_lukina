@@ -1,0 +1,43 @@
+.footer {
+	background-color: #201b38;
+	text-align: right;
+	color: $text-white;
+	font-family: $font-family-second;
+	font-size: 12px;
+	&__text,&__phone {
+		line-height: 60px;
+
+	}
+	&__phone {
+	padding-right: 44px;
+	padding-left: 34px;
+	@media (min-width: $screen-sm) {
+		padding-right: 60px;
+		padding-left: 50px;
+}
+	@media (min-width: $screen-lg) {
+		padding-right: 90px;
+		padding-left: 40px;
+}
+	}
+	&__inner {
+	@media (min-width: $screen-xs) {
+			width: 300px;
+			margin:auto;
+			&:after {
+			content: '';
+			clear: both;
+			display: table;
+		}
+		}
+	@media (min-width: $screen-sm) {
+		width: 746px;
+		font-size: 14px;
+	}
+	@media (min-width: $screen-lg) {
+		width: 1170px;
+		font-size: 16px;
+		}
+	
+	}
+}

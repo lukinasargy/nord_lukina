@@ -17,13 +17,11 @@
 			}
  		}
 		@media (min-width: $screen-sm) {
-
-			justify-content: space-between;
 			width: 746px;
 		}
 		@media (min-width: $screen-lg) {
 			width: 1170px;
-			}
+		}
 		
 	}
 }

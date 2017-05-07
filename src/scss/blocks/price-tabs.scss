@@ -111,5 +111,8 @@
 		&--active {font-size: 20px;}
 
 		&__regions-link {font-size: 16px;}
+		&--active:after {left: 108px;}
+		&__link:after {left: 108px;}
+
 	}
 }
