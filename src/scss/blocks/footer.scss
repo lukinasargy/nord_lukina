@@ -9,15 +9,15 @@
 
 	}
 	&__phone {
-	padding-right: 44px;
-	padding-left: 34px;
+	padding-right: 35px;
+	padding-left: 35px;
 	@media (min-width: $screen-sm) {
-		padding-right: 60px;
+		padding-right: 50px;
 		padding-left: 50px;
 }
 	@media (min-width: $screen-lg) {
-		padding-right: 90px;
-		padding-left: 40px;
+		padding-right: 35px;
+		padding-left: 35px;
 }
 	}
 	&__inner {
