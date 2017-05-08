@@ -18,7 +18,7 @@ $(document).ready(function(){
       event.preventDefault()
       $(this).addClass("price-tabs--active")
       .removeClass("price-tabs__link")
-      .siblings().removeClass("price-tabs--active")
+      .siblings(".price-tabs--active").removeClass("price-tabs--active")
       .addClass("price-tabs__link")
     $($(this.hash)).show()
       .siblings(".price-tabs__content").hide();

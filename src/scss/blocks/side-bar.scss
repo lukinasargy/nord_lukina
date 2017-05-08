@@ -7,6 +7,7 @@
     background-color: rgba(0,0,0, 0.4);
     font-family: $font-family-second;
     font-weight: 300;
+    font-size: 12px;
 
 	@media (min-width: $screen-xs) {
 		display: block;
@@ -23,13 +24,13 @@
 		position: absolute;
 		right: -200%;
 		margin:0 auto;
-		top:50%;
+		top:40%;
 		width: 200px;
 	}
 	.social--vk {
 		// @include sprite($kraken);
 		margin-left: 5px;
-		margin-top: 25px;
+		margin-top: 20px;
 		@media (min-width: $screen-lg) {
 		margin-top: 40px;
 		}
