@@ -7,7 +7,7 @@
 		flex-direction:column;
 		p{
 			margin: 0;
-			padding-top: 15px;
+			padding-top: 5px;
 			font-size: 12px;
 		}
 
@@ -61,7 +61,8 @@
 
 		@media (min-width: $screen-xs) {
 			padding-left: 12px;
-			padding-bottom: 35px;
+			// padding-bottom: 50px;
+			height: 114px;
 			&--line:last-child:after {
 			display: none;
 			}
@@ -97,7 +98,7 @@
 	}
 	&__title {
 		font-size: 20px;
-		padding: 40px 0 40px 0;
+		padding: 35px 0 35px 0;
 		@media (min-width: $screen-lg) {
 			font-size: 30px;
 		}

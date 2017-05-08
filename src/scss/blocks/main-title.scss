@@ -1,19 +1,29 @@
 .main-title {
 	&__head {
+
 		margin: 0;
 		font-family: $font-family-third;
 		font-weight: 400;
 		font-size: 30px;
-	@media (min-width: $screen-sm) {
-		font-size: 50px;
-	}
+		margin-top: 150px;
+		@media (min-width: $screen-sm) {
+			font-size: 50px;
+			margin-left: 64px;
+		}
+		@media (min-width: $screen-lg) {
+			margin-left: 0;
+		}
 
-	}
-	&__description {
-		font-weight: 300;
-		font-size: 16px;
-	@media (min-width: $screen-sm) {
-		font-size: 20px;
-	}
+		}
+		&__description {
+			font-weight: 300;
+			font-size: 16px;
+		@media (min-width: $screen-sm) {
+			margin-left: 64px;
+			font-size: 20px;
+		}
+		@media (min-width: $screen-lg) {
+			margin-left: 0;
+		}
 	}
 }
