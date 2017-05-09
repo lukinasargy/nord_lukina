@@ -27,17 +27,18 @@
  	@media (min-width: $screen-sm) {
 		background: none;
 		color: $text-dark;
+		height: 345px;
 		background-color: $light-grey;
 		
 		.slide-section__info {
 			float: left;
 			display: inline-block;
-			width: 50%;
+			width: 52%;
 		}
 		.slide-section__visual {
 				float: left;
 				display: inline-block;
-				width: 50%;
+				width: 48%;
 				height: 343px;
 				.slide-section__img {
 					width: 100%;

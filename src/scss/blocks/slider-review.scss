@@ -29,6 +29,9 @@
 	}
 
 	@media (min-width: $screen-sm) {
+			&__text {
+				margin: 0 0 15px 50px;
+			}
 
 		}
 	@media (min-width: $screen-lg) {

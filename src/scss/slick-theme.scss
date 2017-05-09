@@ -71,7 +71,7 @@ $slick-opacity-not-active: 0.25 !default;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 50%;
+    top: 35%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -178,6 +178,10 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 0;
     margin: 0;
     width: 100%;
+    @media (min-width: $screen-sm) {
+        bottom: 0px;
+        left: -75px;
+    }
     li {
         position: relative;
         display: inline-block;
@@ -186,6 +190,15 @@ $slick-opacity-not-active: 0.25 !default;
         margin: 0 13px;
         padding: 0;
         cursor: pointer;
+        @media (min-width: $screen-sm) {
+            margin: 0 8px;
+            height: 10px;
+            width: 10px;
+        }
+        @media (min-width: $screen-lg) {
+            height: 15px;
+            width: 15px;
+        }
         button {
             border: 0;
             background: $blue;
@@ -198,6 +211,14 @@ $slick-opacity-not-active: 0.25 !default;
             color: transparent;
             padding: 5px;
             cursor: pointer;
+            @media (min-width: $screen-sm) {
+            height: 10px;
+            width: 10px;
+            }
+            @media (min-width: $screen-lg) {
+                height: 15px;
+                width: 15px;
+            }
             &:hover, &:focus {
                 outline: none;
                 &:before {
@@ -219,6 +240,14 @@ $slick-opacity-not-active: 0.25 !default;
                 opacity: $slick-opacity-not-active;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
+                @media (min-width: $screen-sm) {
+                    height: 10px;
+                    width: 10px;
+                }
+                @media (min-width: $screen-lg) {
+                    height: 15px;
+                    width: 15px;
+                }
             }
         }
         &.slick-active button:before {
@@ -242,6 +271,11 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 0;
     margin: 0;
     width: 100%;
+    @media (min-width: $screen-sm) {
+            bottom: -15px;
+            margin: 0 7px;
+            left: -5px;
+        }
     li {
         position: relative;
         display: inline-block;
@@ -250,9 +284,12 @@ $slick-opacity-not-active: 0.25 !default;
         margin: 0 13px;
         padding: 0;
         cursor: pointer;
+        @media (min-width: $screen-sm) {
+            margin: 0 7px;
+        }
         @media (min-width: $screen-lg) {
             height: 15px;
-        width: 15px;
+            width: 15px;
         }
         button {
             border: 0;
@@ -267,9 +304,9 @@ $slick-opacity-not-active: 0.25 !default;
             padding: 5px;
             cursor: pointer;
                     @media (min-width: $screen-lg) {
-            height: 15px;
-        width: 15px;
-        }
+                        height: 15px;
+                        width: 15px;
+                    }
             &:hover, &:focus {
                 outline: none;
                 &:before {
@@ -292,9 +329,9 @@ $slick-opacity-not-active: 0.25 !default;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
                         @media (min-width: $screen-lg) {
-            height: 15px;
-        width: 15px;
-        }
+                        height: 15px;
+                        width: 15px;
+                        }
             }
         }
         &.slick-active button:before {

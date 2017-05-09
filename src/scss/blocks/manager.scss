@@ -37,7 +37,15 @@
     transform: none;
     flex-basis: 25%;
     padding: 0 0 55px 0;
+    &__person {
+      margin-bottom: 36px;
+      line-height: 20px;
+    }
+    &__link {
+      line-height: 24px;
+    }
     &__region {
+      font-weight: 300;
       font-size: 14px;
       font-family: $font-family;
       position: relative;

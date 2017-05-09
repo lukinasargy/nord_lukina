@@ -19,7 +19,7 @@
 		@media (min-width: $screen-sm) {
 			flex-direction:row;
 			p {
-				padding-top: 20px;
+				padding-top: 10px;
 				padding-right: 30px;
 			}
 
@@ -68,8 +68,10 @@
 			}
 		}
 		@media (min-width: $screen-sm) {
+			height: 104px;
+
 			padding-left: 0;
-			padding-bottom: 30px;
+			// padding-bottom: 30px;
 			width: 33%;
 			&--square:before {
 				top:20px;
@@ -99,6 +101,10 @@
 	&__title {
 		font-size: 20px;
 		padding: 35px 0 35px 0;
+		@media (min-width: $screen-sm) {
+		padding: 35px 0 20px 0;
+
+		}
 		@media (min-width: $screen-lg) {
 			font-size: 30px;
 		}

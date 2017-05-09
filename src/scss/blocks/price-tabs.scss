@@ -27,7 +27,7 @@
 	}
 
 	&__link {
-		line-height: 40px;
+		line-height: 50px;
 		font-size: 12px;
 		position: relative;
 	}
@@ -40,7 +40,7 @@
 		border-left: 1px solid $text-grey;
 	  	border-top: 1px solid $text-grey;
 	  	transform: rotate(135deg);
-	  	top:24px;
+	  	top:22px;
 	  	left: 72px;
 	}
 
@@ -67,7 +67,7 @@
 			width: 490px;
 			td,th {
 				height: 45px;
-				padding: 0 30px;
+				padding: 0 40px;
 			}
 		}
 		@media (min-width: $screen-lg) {
