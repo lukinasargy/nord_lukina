@@ -27,6 +27,9 @@
 		margin:0 auto;
 		top:40%;
 		width: 200px;
+		@media (min-width: $screen-lg) {
+			top:50%;
+		}
 	}
 	.social--vk {
 		// @include sprite($kraken);

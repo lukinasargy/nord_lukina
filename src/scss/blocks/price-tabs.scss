@@ -23,7 +23,9 @@
 	  	transform: rotate(-135deg);
 	  	top:22px;
 	  	left: 72px;
-
+	  	@media (min-width: $screen-lg) {
+			top:42px;
+		}
 	}
 
 	&__link {
@@ -42,6 +44,9 @@
 	  	transform: rotate(135deg);
 	  	top:22px;
 	  	left: 72px;
+		@media (min-width: $screen-lg) {
+			top:42px;
+		}
 	}
 
 	&__content {
@@ -108,8 +113,15 @@
 		}
 	}
 	@media (min-width: $screen-lg) {
-		&__link {font-size: 20px;}
-		&--active {font-size: 20px;}
+		&__link {
+			font-size: 20px;
+			line-height: 90px;
+		}
+		&--active {
+			font-size: 20px;
+			line-height: 90px;
+
+		}
 
 		&__regions-link {font-size: 16px;}
 		&--active:after {left: 108px;}

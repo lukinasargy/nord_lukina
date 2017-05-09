@@ -29,7 +29,10 @@
 		color: $text-dark;
 		height: 345px;
 		background-color: $light-grey;
-		
+		&__title {
+			font-weight: 300;
+			width: 70%;
+		}
 		.slide-section__info {
 			float: left;
 			display: inline-block;
@@ -64,12 +67,14 @@
 		&__title {
 			padding: 50px 0 50px 0;
 			font-size: 30px;
+			font-weight: 300;
+			width: 70%;
 			}
 		.slider__text {
 			padding: 0 25px 0 25px;			
 			font-size: 16px;
 			line-height: 30px;
-			margin: 40px 0 120px 0px;
+			margin: 60px 0 120px 0px;
 
 
 		}

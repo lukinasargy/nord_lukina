@@ -9,7 +9,13 @@
 	}
 	@media (min-width: $screen-lg) {
 		background-color: #FFF;
+		height: 537px;
+		&__title {
+			font-size: 30px;
+			padding: 85px 0 10px 0;
+
 		}
+	}
 
 	&__inner {
 		@media (min-width: $screen-xs) {
